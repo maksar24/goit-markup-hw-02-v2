@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #2E2F42;
+    --text-color: #434455;
+    --primary-white-color: #FFF;
+    --secondary-bg-color: #F4F4FD;
+    --active-color: #404BBF;
+    --active-button-color: #4D5AE5;
+
+    --primary-font-size: 16px;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-color);
+
+    font-family: Roboto, sans-serif;
+    font-size: var(--primary-font-size);
+    letter-spacing: 0.02em;
+}
+
+a,
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.title-none {
+    display: none;
+}
+
+.logo {
+    color: var(--primary-color);
+
+    font-family: Raleway, cursive;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+}
+
+.logo .blue {
+    color: var(--active-button-color);
+}
+
+.logo.bottom {
+    color: var(--secondary-bg-color);
+}
+
+.site-nav .site-nav-link {
+    color: var(--primary-color);
+    line-height: 1.15;
+}
+
+.site-nav .site-nav-link:hover,
+.site-nav .site-nav-link:focus {
+    color: var(--active-color);
+}
+
+.contacts .contacts-text {
+    color: var(--text-color);
+    line-height: 1.15;
+}
+
+.contacts .contacts-text:hover,
+.contacts .contacts-text:focus {
+    color: var(--active-color);
+}
+
+.hero {
+    background-color: var(--primary-color);
+}
+
+.hero-title {
+    color: var(--primary-white-color);
+    text-align: center;
+
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+}
