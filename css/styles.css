@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #2E2F42;
-    --text-color: #434455;
+    --primary-color: #434455;
+    --secondary-color: #2E2F42;
     --primary-white-color: #FFF;
     --secondary-bg-color: #F4F4FD;
     --active-color: #404BBF;
@@ -18,36 +18,39 @@ body {
     letter-spacing: 0.02em;
 }
 
-a,
-ul {
-    list-style: none;
+.link {
     text-decoration: none;
 }
 
-.title-none {
-    display: none;
+.list {
+    list-style: none;
 }
 
 .logo {
-    color: var(--primary-color);
+    color: var(--active-button-color);
 
-    font-family: Raleway, cursive;
+    font-family: Raleway, sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase
 }
 
-.logo .blue {
-    color: var(--active-button-color);
+.logo .dark {
+    color: var(--secondary-color);
 }
 
-.logo.bottom {
+.logo .white {
     color: var(--secondary-bg-color);
 }
 
 .site-nav .site-nav-link {
-    color: var(--primary-color);
-    line-height: 1.15;
+    color: var(--secondary-color);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .site-nav .site-nav-link:hover,
@@ -55,9 +58,13 @@ ul {
     color: var(--active-color);
 }
 
+.address {
+    font-style: normal;
+}
+
 .contacts .contacts-text {
-    color: var(--text-color);
-    line-height: 1.15;
+    color: var(--primary-color);
+    line-height: 1.5;
 }
 
 .contacts .contacts-text:hover,
@@ -66,7 +73,7 @@ ul {
 }
 
 .hero {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .hero-title {
@@ -76,37 +83,48 @@ ul {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
+    letter-spacing: 0.02em;
 }
 
 .button {
     color: var(--primary-white-color);
-    border-radius: 4px;
     background-color: var(--active-button-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.04em;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--active-color)
 }
 
 .text {
-    color: var(--text-color);
     line-height: 1.5;
 }
 
 .title {
+    color: var(--secondary-color);
+    
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    letter-spacing: 0.02em
 }
 
 .section-title {
+    color: var(--secondary-color);
     text-align: center;
+    text-transform: capitalize;
+    
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
+    letter-spacing: 0.02em
 }
 
 .team {
@@ -129,20 +147,20 @@ ul {
 }
 
 .radio-button {
-    border-radius: 4px;
-    border: 1px solid #E7E9FC;
     background-color: var(--secondary-bg-color);
 }
 
 .radio-button .filter {
     color: var(--active-button-color);
+    background-color: var(--secondary-bg-color);
     text-align: center;
+    cursor: pointer;
 
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.04em;
 }
 
 .filter:hover,
